@@ -15,7 +15,7 @@ if($conn->connect_error)
     exit();
 }
 
-function select_data($sql);
+function select_data($sql)
 {
     global $conn;
     $res=mysqli_query($conn,$sql);
@@ -30,7 +30,7 @@ function select_data($sql);
       
 }
 
-function insert_data($sql);
+function insert_data($sql)
 {
     global $conn;
     $res=mysqli_query($conn,$sql);
@@ -45,7 +45,7 @@ function insert_data($sql);
       
 }
 
-function delete_data($sql);
+function delete_data($sql)
 {
     global $conn;
     $res=mysqli_query($conn,$sql);
@@ -60,7 +60,7 @@ function delete_data($sql);
       
 }
 
-function update_data($sql);
+function update_data($sql)
 {
     global $conn;
     $res=mysqli_query($conn,$sql);
@@ -75,7 +75,7 @@ function update_data($sql);
       
 }
 
-function count_data($sql);
+function count_data($sql)
 {
     global $conn;
     $res=mysqli_query($conn,$sql);
